@@ -22,7 +22,7 @@
 	<p>
 	<c:url value="/logout" var="logoutUrl" />
 		<form method="post" action="${logoutUrl}">
-			<input type="hidden"name="${_csrf.parameterName}" value="${_csrf.token}"/>
+			<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 			<input type="submit" value="Logout">
 		</form>
 	</p>
