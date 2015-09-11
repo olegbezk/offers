@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<a href="${pageContext.request.contextPath}/">Home</a><br>
+<p><a href="${pageContext.request.contextPath}/">Home</a></p>
 
 <sf:form method="post" action="${pageContext.request.contextPath}/docreate" commandName="offer">
 
