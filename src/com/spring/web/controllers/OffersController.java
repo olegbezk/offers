@@ -2,6 +2,7 @@ package com.spring.web.controllers;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,7 +54,11 @@ public class OffersController {
 	}
 	
 	@RequestMapping("/createoffer")
-	public String createOffer(Model model) {
+	public String createOffer(Model model, HttpServletRequest request) {
+		
+//		System.out.println(request.getRemoteUser().toString());
+//		
+//		System.out.println(request.isUserInRole("ROLE_ADMIN"));
 	
 		model.addAttribute("offer", new Offer());
 		
