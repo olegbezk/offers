@@ -41,8 +41,9 @@ p.error {
 }
 
 table.offers {
+	width: 450;
 	padding: 20px;
-	border: 1px solid gray;
+	border: 1px solid orange;
 }
 
 .valid {

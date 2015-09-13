@@ -50,8 +50,8 @@
 		<security:authentication-provider>
 			<security:jdbc-user-service
 				data-source-ref="dataSource"
-				users-by-username-query="select username, password, enabled, email  from users where username = ?"
-				authorities-by-username-query="select username, authority from authorities where username = ? " />
+				users-by-username-query="select * from users where binary username = ?"
+				authorities-by-username-query="select * from authorities where binary username = ?" />
 		</security:authentication-provider>
 
 	</security:authentication-manager>
