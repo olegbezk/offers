@@ -29,18 +29,22 @@ public class LoginController {
 	public String showLogin() {
 		return "login";
 	}
-	
-	
+
+	@RequestMapping("/denied")
+	public String showDenied() {
+		return "denied";
+	}
+
 	@RequestMapping("/admin")
 	public String showAdmin(Model model) {
-		
+
 		List<User> users = usersService.getAllUsers();
-		
+
 		model.addAttribute("users", users);
-		
+
 		return "admin";
 	}
-	
+
 	@RequestMapping("/loggedout")
 	public String showLoggedOut() {
 		return "loggedout";
@@ -58,7 +62,7 @@ public class LoginController {
 		if (result.hasErrors()) {
 			return "newaccount";
 		}
-		user.setAuthority("user");
+		user.setAuthority("ROLE_USER");
 		user.setEnabled(true);
 
 		if (usersService.exists(user.getUsername())) {

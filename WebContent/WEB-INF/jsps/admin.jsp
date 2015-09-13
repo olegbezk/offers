@@ -14,7 +14,6 @@
 		<a href="${pageContext.request.contextPath}/">Home</a>
 	</p>
 	<h3>Authorized users only !</h3>
-	<h4>Users List:</h4>
 
 	<table class="formtable">
 		<tr>
