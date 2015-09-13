@@ -17,7 +17,7 @@
 			offers.</a>
 	</p>
 	<p>
-		<a href="${pageContext.request.contextPath}/createoffer">Add a new
+		<a href="${pageContext.request.contextPath}/createoffer">Add new
 			offer.</a>
 	</p>
 	<sec:authorize access="hasRole('ROLE_ADMIN')">
@@ -35,7 +35,9 @@
 		</p>
 	</sec:authorize>
 	<sec:authorize access="!isAuthenticated()">
-		<a href="<c:url value='/login'/>">Login</a>
+		<p>
+			<a href="<c:url value='/login'/>">Login</a>
+		</p>
 	</sec:authorize>
 </body>
 </html>

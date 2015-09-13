@@ -51,3 +51,32 @@ table.offers {
 	color: green;
 	margin-left: 10px;
 }
+
+div.footer {
+	font-size: small;
+	color: gray;
+}
+
+div.content {
+	position: relative;
+	padding: 40px;
+}
+
+div.header {
+	position: relative;
+	text-align: center;
+	height: 45px;
+	background-color: orange;
+}
+
+input.login {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+a.title {
+	padding-right: 40px;
+	color: white;
+	font-size: 35px;
+}
