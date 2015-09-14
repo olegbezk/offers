@@ -143,5 +143,10 @@
   		<artifactId>slf4j-jcl</artifactId>
   		<version>${slf4jVersion}</version>
   	</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${springVersion}</version>
+		</dependency>
 	</dependencies>
 </project>
