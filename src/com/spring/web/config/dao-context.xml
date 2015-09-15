@@ -12,7 +12,7 @@
 	<context:component-scan base-package="com.spring.web.dao">
 	</context:component-scan>
 
-	<context:property-placeholder location="classpath:db.properties" />
+	<!-- <context:property-placeholder location="classpath:db.properties" /> -->
 
 	<!-- <jee:jndi-lookup jndi-name="jdbc/spring" id="dataSource" expected-type="javax.sql.DataSource"> 
 		</jee:jndi-lookup> -->
@@ -32,14 +32,12 @@
 
 	<tx:annotation-driven />
 
-<!-- 	<beans profile="production">
-		<context:property-placeholder
-			ignore-resource-not-found="true" location="classpath:db.properties" />
+	<beans profile="production">
+		<context:property-placeholder location="classpath:db.properties" />
 	</beans>
 
 	<beans profile="test">
-		<context:property-placeholder
-			ignore-resource-not-found="true" location="classpath:testdb.properties" />
-	</beans> -->
+		<context:property-placeholder location="classpath:testdb.properties" />
+	</beans>
 
 </beans>

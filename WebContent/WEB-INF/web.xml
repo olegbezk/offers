@@ -43,7 +43,7 @@
 	</context-param>
  	<context-param>
 		<param-name>spring.profile.active</param-name>
-		<param-value>production</param-value>
+		<param-value>production,test</param-value>
 	</context-param> 
 	<filter>
 		<display-name>springSecurityFilterChain</display-name>
