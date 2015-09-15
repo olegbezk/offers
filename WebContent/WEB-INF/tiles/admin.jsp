@@ -6,6 +6,7 @@
 
 <table class="formtable">
 	<tr>
+		<td>Name</td>
 		<td>Username</td>
 		<td>Email</td>
 		<td>Role</td>
@@ -14,6 +15,8 @@
 
 	<c:forEach var="user" items="${users}">
 		<tr>
+
+			<td><c:out value="${user.name}"></c:out></td>
 
 			<td><c:out value="${user.username}"></c:out></td>
 

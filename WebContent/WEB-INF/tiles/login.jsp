@@ -15,7 +15,7 @@
 		method='POST'>
 		<table class="formtable">
 			<tr>
-				<td>User:</td>
+				<td>Username:</td>
 				<td><input class="control" type='text' name='username' value=''></td>
 			</tr>
 			<tr>
