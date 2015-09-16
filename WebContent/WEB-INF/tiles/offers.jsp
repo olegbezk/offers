@@ -2,7 +2,7 @@
 	pageEncoding="US-ASCII"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<table class="offers">
+<table class="formtable">
 	<tr>
 		<td>Name</td>
 		<td>Email</td>
