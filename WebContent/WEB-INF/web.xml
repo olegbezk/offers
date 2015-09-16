@@ -41,10 +41,6 @@
 			classpath:com/spring/web/config/security-context.xml
 		</param-value>
 	</context-param>
-	<context-param>
-		<param-name>spring.profile.active</param-name>
-		<param-value>production</param-value>
-	</context-param>
 	<filter>
 		<display-name>springSecurityFilterChain</display-name>
 		<filter-name>springSecurityFilterChain</filter-name>
