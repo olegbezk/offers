@@ -9,29 +9,29 @@ import org.hibernate.validator.constraints.NotBlank;
 import com.spring.web.validation.ValidEmail;
 
 public class User {
-	
-    @NotBlank
-    @Size(min=5, max=15)
-    @Pattern(regexp="^\\w{5,}$")
+
+	@NotBlank
+	@Size(min = 5, max = 15)
+	@Pattern(regexp = "^\\w{5,}$")
 	private String username;
 
-    @NotBlank
-    @Pattern(regexp="^\\S+$")
-    @Size(min=6, max=15)
+	@NotBlank
+	@Pattern(regexp = "^\\S+$")
+	@Size(min = 6, max = 15)
 	private String password;
-	
-    @NotNull
-    @ValidEmail
+
+	@NotNull
+	@ValidEmail
 	private String email;
-    
-    @NotBlank
-    @Size(min=5, max=15)
-    private String name;
+
+	@NotBlank
+	@Size(min = 5, max = 15)
+	private String name;
 
 	private boolean enabled = false;
 
 	private String authority;
-	
+
 	public User() {
 	}
 

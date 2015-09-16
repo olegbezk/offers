@@ -28,12 +28,12 @@ public class OffersDao {
 		return jdbc.query("select * from offers, users where offers.username = users.username and users.enabled = true",
 				new OffersRowMapper());
 	}
-	
+
 	public List<Offer> getOffers(String username) {
 
-		return jdbc.query("select * from offers, users where offers.username = users.username and users.enabled = true and users.username = :username",
-				new MapSqlParameterSource("username", username),
-				new OffersRowMapper());
+		return jdbc.query(
+				"select * from offers, users where offers.username = users.username and users.enabled = true and users.username = :username",
+				new MapSqlParameterSource("username", username), new OffersRowMapper());
 	}
 
 	public boolean update(Offer offer) {
