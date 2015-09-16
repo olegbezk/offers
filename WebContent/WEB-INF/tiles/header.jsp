@@ -4,6 +4,9 @@
 <%@ taglib prefix="sec"
 	uri="http://www.springframework.org/security/tags"%>
 
+<script type="text/javascript"
+	src="${pageContext.request.contextPath}/static/script/jquery-1.11.3.min.js"></script>
+
 
 <a class="title" href="<c:url value='/'/>">Offers</a>
 
@@ -13,7 +16,8 @@
 
 	<form method="post" action="${logoutUrl}">
 		<input type="hidden" name="${_csrf.parameterName}"
-			value="${_csrf.token}" /> <input type="submit" value="Logout" class="login">
+			value="${_csrf.token}" /> <input type="submit" value="Logout"
+			class="login">
 	</form>
 </sec:authorize>
 
@@ -24,5 +28,5 @@
 	<form action="${loginUrl}">
 		<input type="submit" value="Login" class="login">
 	</form>
-	
+
 </sec:authorize>

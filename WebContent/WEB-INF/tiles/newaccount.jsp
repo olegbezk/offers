@@ -3,9 +3,6 @@
 <%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
-<script type="text/javascript"
-	src="${pageContext.request.contextPath}/static/script/jquery-1.11.3.min.js"></script>
-
 <script type="text/javascript">
 	function onLoad() {
 		$("#password").keyup(checkPasswordsMatch);

@@ -31,7 +31,7 @@ public class OffersDao {
 	
 	public List<Offer> getOffers(String username) {
 
-		return jdbc.query("select * from offers, users where offers.username = users.username and users.enabled = true and user.username = username",
+		return jdbc.query("select * from offers, users where offers.username = users.username and users.enabled = true and users.username = :username",
 				new MapSqlParameterSource("username", username),
 				new OffersRowMapper());
 	}
@@ -39,7 +39,7 @@ public class OffersDao {
 	public boolean update(Offer offer) {
 		BeanPropertySqlParameterSource params = new BeanPropertySqlParameterSource(offer);
 
-		return jdbc.update("update offers set text=:text, where id=:id", params) == 1;
+		return jdbc.update("update offers set text=:text where id=:id", params) == 1;
 	}
 
 	public boolean create(Offer offer) {
