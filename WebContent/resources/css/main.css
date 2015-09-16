@@ -71,14 +71,15 @@ div.header {
 
 input.login {
 	position: absolute;
-	top: 12px;
-	right: 12px;
+	top: 13px;
+	right: 13px;
+	border: 1px solid yellow;
 }
 
 a.title {
 	padding-right: 40px;
 	color: white;
-	font-size: 35px;
+	font-size: 37px;
 }
 
 input.delete {

@@ -2,11 +2,12 @@
 	pageEncoding="US-ASCII"%>
 <%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <script type="text/javascript">
 	function onDeleteClick(event) {
 
-		var doDelete = confirm("Are you sure you want to delete this offer?");
+		var doDelete = confirm("<fmt:message key="DeleteOffer.offer.message"/>");
 
 		if (doDelete == false) {
 			event.preventDefault();

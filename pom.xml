@@ -11,6 +11,7 @@
 		<apacheTilesVersion>3.0.5</apacheTilesVersion>
 		<slf4jVersion>1.7.6</slf4jVersion>
 		<log4jVersion>1.2.17</log4jVersion>
+		<hibernateVersion>5.0.1.Final</hibernateVersion>
 	</properties>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
@@ -26,6 +27,11 @@
 		</plugins>
 	</build>
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${springVersion}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-config</artifactId>
@@ -100,7 +106,12 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
-			<version>5.0.1.Final</version>
+			<version>${hibernateVersion}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernateVersion}</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-validator</groupId>
@@ -139,10 +150,10 @@
 			<version>${log4jVersion}</version>
 		</dependency>
 		<dependency>
-  		<groupId>org.slf4j</groupId>
-  		<artifactId>slf4j-jcl</artifactId>
-  		<version>${slf4jVersion}</version>
-  	</dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-jcl</artifactId>
+			<version>${slf4jVersion}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
